@@ -11,7 +11,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Route::get('/hello','App\Http\Controllers\PostController@hello');
+Route::get('/data','App\Http\Controllers\PostController@data');
 Route::get('/posts','App\Http\Controllers\PostController@index')->name('posts.index');
 Route::get('/posts/create','App\Http\Controllers\PostController@create')->name('posts.create');
 Route::post('/posts','App\Http\Controllers\PostController@store')->name('posts.store');

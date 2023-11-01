@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+  public function hello(){
+    return '<h1>welcome world</h1>';
+  }
+  public function data(){
+    return '<h1>welcome data world</h1>';
+  }
     public function index(){
      $post = new Post ;
      $user = new User ;
